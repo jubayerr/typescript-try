@@ -49,3 +49,22 @@ let cast = {
     series: "Dark",
     income: 420000
 };
+const cristianoRonaldo = {
+    name: "Critiano Ronaldo",
+    club: "Real Madrid",
+    salary: 450000,
+    wife: "Georgina Rodríguez",
+    isPlaying: true
+};
+function getBonus(player) {
+    return player.salary * 0.1;
+}
+// class
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        return this.name;
+    }
+}

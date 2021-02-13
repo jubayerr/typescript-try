@@ -70,3 +70,37 @@ let cast: {
     series: "Dark",
     income: 420000
 }
+
+// interface
+
+interface Player {
+    club: string,
+    name: string,
+    salary: number,
+    wife: string,
+    isPlaying: boolean
+}
+
+const cristianoRonaldo: Player = {
+    name: "Critiano Ronaldo",
+    club: "Real Madrid",
+    salary: 450000,
+    wife: "Georgina Rodríguez",
+    isPlaying: true
+}
+
+function getBonus(player: Player) {
+    return player.salary * 0.1;
+}
+
+// class
+
+class Person {
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+    getName(): string {
+        return this.name
+    }
+}
